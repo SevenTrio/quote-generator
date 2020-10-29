@@ -5,11 +5,29 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Quote Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.min.css">
     <script defer src="js/scripts.min.js"></script>
 </head>
 <body>
-    Hello world
+    <div class="container">
+        <div class="quote">
+            <div class="loader"></div>
+            <p id="quote-text" class="quote__text">
+                <img src="img/quotation-mark.svg" alt="" class="quote__quotation-mark">
+                <img src="img/quotation-mark.svg" alt="" class="quote__quotation-mark">
+                I am not afraid of tomorrow, for I have seen yesterday and I love today.</p>
+            <p id="quote-author" class="quote__author">William White</p>
+            <div class="quote__bottom-line">
+                <button class="button quote__button quote__tweet">
+                    <img src="img/tweet.svg" alt="" class="quote__tweet-icon">
+                </button>
+                <button id="new-quote" class="button quote__button quote__new-quote">
+                    <span>New Quote</span>
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

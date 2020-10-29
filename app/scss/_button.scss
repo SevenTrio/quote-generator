@@ -1,0 +1,11 @@
+.button {
+  padding: 8px 28px;
+  border: none;
+  border-radius: 8px;
+  background-color: $gray2;
+  box-shadow: 0 5px 0 #BDBDBD;
+
+  &:active {
+    background-color: darken($gray2, 3%);
+  }
+}

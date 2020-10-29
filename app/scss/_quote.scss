@@ -1,0 +1,94 @@
+.quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  max-width: 960px;
+  padding: 24px 32px;
+  border-radius: 10px;
+  background-color: $gray1;
+
+  &__text {
+    //display: none;
+    padding: 0 16px;
+    margin-bottom: 16px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 52px;
+    text-align: center;
+
+    @media screen and (max-width: 720px) {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  &__quotation-mark {
+    display: inline;
+    height: 30px;
+    width: auto;
+    margin-bottom: 5px;
+    &:first-child {
+      margin-right: -10px;
+    }
+
+    @media screen and (max-width: 720px) {
+      height: 18px;
+      margin-bottom: 3px;
+      &:first-child {
+        margin-right: -6px;
+      }
+    }
+  }
+
+  &__author {
+    //display: none;
+    margin-bottom: 8px;
+    font-style: italic;
+    font-size: 34px;
+    line-height: 40px;
+
+    @media screen and (max-width: 720px) {
+      margin-bottom: 16px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  &__bottom-line {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    height: 44px;
+
+    @media screen and (max-width: 720px) {
+      height: 34px;
+    }
+  }
+
+  &__tweet-icon {
+    height: 20px;
+
+    @media screen and (max-width: 720px) {
+      height: 14px;
+    }
+  }
+
+  &__new-quote {
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+
+    @media screen and (max-width: 720px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}
