@@ -13,17 +13,20 @@
 <body>
     <div class="container">
         <div class="quote">
-            <div class="loader"></div>
-            <p id="quote-text" class="quote__text">
-                <img src="img/quotation-mark.svg" alt="" class="quote__quotation-mark">
-                <img src="img/quotation-mark.svg" alt="" class="quote__quotation-mark">
-                I am not afraid of tomorrow, for I have seen yesterday and I love today.</p>
-            <p id="quote-author" class="quote__author">William White</p>
+            <div id="quote-loader" class="loader"></div>
+            <div id="quote-text-container" class="quote__text-container" hidden>
+                <p class="quote__text">
+                    <img src="img/quotation-mark.svg" alt="" class="quote__quotation-mark">
+                    <img src="img/quotation-mark.svg" alt="" class="quote__quotation-mark">
+                    <span id="quote-text"></span>
+                </p>
+                <p id="quote-author" class="quote__author"></p>
+            </div>
             <div class="quote__bottom-line">
-                <button class="button quote__button quote__tweet">
+                <button id="tweet-quote" class="button quote__button quote__tweet" disabled>
                     <img src="img/tweet.svg" alt="" class="quote__tweet-icon">
                 </button>
-                <button id="new-quote" class="button quote__button quote__new-quote">
+                <button id="new-quote" class="button quote__button quote__new-quote" disabled>
                     <span>New Quote</span>
                 </button>
             </div>

@@ -1,20 +1,15 @@
 .loader {
-  display: none;
   border: 8px solid $gray2;
   border-top: 8px solid $black;
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  margin: 16px;
+  margin: 24px;
   animation: spin 2s linear infinite;
 
   @media screen and (max-width: 720px) {
     height: 102px;
     width: 102px;
-  }
-
-  &--active {
-    display: block;
   }
 }
 

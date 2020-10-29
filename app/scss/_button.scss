@@ -8,4 +8,8 @@
   &:active {
     background-color: darken($gray2, 3%);
   }
+
+  &:disabled {
+    background-color: darken($gray2, 5%);
+  }
 }
