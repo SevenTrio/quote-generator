@@ -2,7 +2,7 @@
   "name": "gulp-light-starter",
   "version": "1.0.0",
   "description": "Simple gulp configuration for fast project start",
-  "main": "app/index.html",
+  "main": "docs/index.html",
   "scripts": {
     "start": "gulp cleanimg && gulp"
   },
