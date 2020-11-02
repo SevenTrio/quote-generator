@@ -4,12 +4,19 @@
   border-radius: 8px;
   background-color: $gray2;
   box-shadow: 0 5px 0 #BDBDBD;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
 
   &:active {
+    transform: none;
     background-color: darken($gray2, 3%);
   }
 
   &:disabled {
+    transform: none;
     background-color: darken($gray2, 5%);
   }
 }
